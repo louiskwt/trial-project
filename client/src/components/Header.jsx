@@ -6,8 +6,10 @@ const Header = () => {
   // Pull out change language function from context
   const { changeLang, articles } = useArticle();
   const language = articles.lang;
+  
   // use useNavigate hook to navigate between English and Cantonese pages
   let navigate = useNavigate();
+
   // handle header navigation click
   const handleNavigate = (lang) => {
     changeLang(lang);
