@@ -58,6 +58,7 @@ export function ArticlesContextProvider({children}) {
     useEffect(() => {
         let fetchArticle;
         if(articles.lang === 'en') {
+            // set up fetchArticle function according to lang
              fetchArticle = async () => {
                 try {
                     // fetch English articles from api
@@ -71,6 +72,7 @@ export function ArticlesContextProvider({children}) {
         }
 
         if(articles.lang === 'zh') {
+            // set up fetchArticle function according to lang
             fetchArticle = async () => {
                 try {
                     // fetch Contonese articles from api

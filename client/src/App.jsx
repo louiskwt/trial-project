@@ -15,8 +15,10 @@ function App() {
     <ArticlesContextProvider>
       <div className="App">
         <BrowserRouter>
+          {/* Navbar */}
           <Header />
           <Routes>
+            {/* Routes for the app */}
             <Route index element={<EnglishPage />} />
             <Route path='/recent-articles' element={<EnglishPage/>} />
             <Route path='/zh/recent-articles' element={<CantonesePage/>} />

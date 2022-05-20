@@ -13,8 +13,8 @@ exports.getCantoneseArticles = (req, res) => {
 
     res.status(200).json({
         status: 'success',
-        recentArticles: cantoneseArticles.slice(0,4),
-        sponsoredArticles: sponsoredArticles.slice(0,6)
+        recentArticles: cantoneseArticles.slice(0,4), // send back 4 most recent
+        sponsoredArticles: sponsoredArticles.slice(0,6) // send back 6 sponsored
     })
 }
 
@@ -31,7 +31,7 @@ exports.getEnglishArticles = (req, res) => {
 
     res.status(200).json({
         status: 'success',
-        recentArticles: englishArticles.slice(0,4), // send back only the 4 most recent
-        sponsoredArticles: sponsoredArticles.slice(0,6)
+        recentArticles: englishArticles.slice(0,4), // send back 4 most recent
+        sponsoredArticles: sponsoredArticles.slice(0,6) // send back 6 sponsored
     })
 }
