@@ -20,6 +20,15 @@ To see the demo the project, you should run the following commmands:
     npm run demo
 ```
 
+To verify the articles are fetched properly, please open up the console in the browser once you have started the backend server. \
+
+Alternatively, you can use tools like Postman to make a request the following route to get the data about the fetched articles: \
+
+
+**Cantonese Articles: http://localhost:8000/api/v1/articles/zh** 
+
+**English Articles: http://localhost:8000/api/v1/articles**
+
 ## Available Scripts
 
 In the server directory, you can run:
