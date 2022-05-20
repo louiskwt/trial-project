@@ -63,6 +63,7 @@ export function ArticlesContextProvider({children}) {
                 try {
                     // fetch English articles from api
                     const res = await ArticlesAPI.get('/');
+                    console.log(res.data); // check response in console
                     dispatch({ type: ACTIONS.LOAD_ARTICLES, res });
                 } catch (error) {
                     // Handle error
@@ -77,6 +78,7 @@ export function ArticlesContextProvider({children}) {
                 try {
                     // fetch Contonese articles from api
                     const res = await ArticlesAPI.get('/zh');
+                    console.log(res.data); // check bankend response in console
                     dispatch({ type: ACTIONS.LOAD_ARTICLES, res });
                 } catch (error) {
                     // Handle error
