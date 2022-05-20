@@ -8,6 +8,7 @@ import Header from './components/Header'
 import CantonesePage from './pages/CantonesePage';
 import { EnglishPage } from './pages/EnglishPage';
 import './App.css'
+import Home from './pages/Home';
 
 function App() {
 
@@ -19,7 +20,7 @@ function App() {
           <Header />
           <Routes>
             {/* Routes for the app */}
-            <Route index element={<EnglishPage />} />
+            <Route index element={<Home />} />
             <Route path='/recent-articles' element={<EnglishPage/>} />
             <Route path='/zh/recent-articles' element={<CantonesePage/>} />
           </Routes>

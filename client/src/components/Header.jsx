@@ -1,4 +1,3 @@
-import React from 'react'
 import { Navbar, Nav, Container } from 'react-bootstrap'
 import { useArticle } from '../context/articlesContext'
 import { useNavigate } from "react-router-dom";
